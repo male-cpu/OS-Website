@@ -1,4 +1,5 @@
 ---
+import logo from '../images/Old School 500x500 Logo.png'
 import Insta from "../images/Instagram_Logo.png"
 import Face from "../images/Facebook_Logo.png"
 import Tiktok from "../images/TikTok_Logo.png"
@@ -6,6 +7,11 @@ import Youtube from "../images/YouTube_Logo.png"
 ---
 <header class="header">
   <div class="container">
+    <div class="logo">
+      <a href="/">
+        <img src={logo} alt="" />
+      </a>
+    </div>
     <nav>
       <ul>
         <li><a href="https://www.instagram.com/oldschoolbjjbelgrade/"><img src={Insta}></a></li>
@@ -27,7 +33,7 @@ import Youtube from "../images/YouTube_Logo.png"
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .header img {

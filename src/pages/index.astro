@@ -16,9 +16,10 @@ const maps = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11331.5508309
     <h2>Location</h2>
     {<p>
       
-    <div>
-    <iframe id="my-iframe" class="logos" src={maps} width="1158px" height="650" style="border:0;"/>
-    <iframe id="my-iframe" class="logos-small" src={maps} width="360" height="360" style="border:0;"/>
+    <div class="iframe-corners">
+    <iframe class="logos" src={maps} width="1158px" height="650" style="border:0;"/>
+    <iframe class="logos-small" src={maps} width="360" height="360" style="border:0;"/>
+    </div>
     </p>}
   </div>
 </section>
@@ -42,6 +43,11 @@ const maps = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11331.5508309
   color: #000000;
   text-align: center;
   margin: 10px auto;
+}
+
+.iframe-corners iframe {
+  border-radius: 10px;
+  margin: auto;
 }
 
 </style>

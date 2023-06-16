@@ -1,6 +1,6 @@
 ---
 import logos from '../images/ospicture2.jpg'
-import logosSmall from '../images/Old School 500x500 Logo.png'
+import logosSmall from '../images/ospicturesmall.jpg'
 
 export interface Props {
   heading?: string;
@@ -22,7 +22,7 @@ const { heading = "Old School BJJ",
   </div>
 
   {showExtra && <>
-    <div class="showcase-img">
+  <div class="showcase-img">
     <img class="logos" src={logos} alt="" />
     <img class="logos-small" src={logosSmall} alt="" />
   </div>
