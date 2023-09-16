@@ -1,11 +1,11 @@
 ---
-import logos from "../images/Old School 500x500 Logo.png"
+import logoFooter from "../images/Old School 500x500 Logo.png"
 ---
 
 <footer class="footer">
   <div class="container">
     <div>
-      <img class="logos" src={logos} alt="" />
+      <img class="logoFooter" src={logoFooter} alt="" />
       <h3></h3>
       <p>
       </p>
@@ -30,7 +30,7 @@ import logos from "../images/Old School 500x500 Logo.png"
     margin-top: 60px;
   }
 
-  .logos {
+  .logoFooter {
   height: 80px;
   vertical-align: middle;
 
@@ -59,7 +59,7 @@ import logos from "../images/Old School 500x500 Logo.png"
   }
 
   @media (max-width: 500px) {
-    .footer div:nth-child(2) {
+    .footer div:nth-child(2), .logoFooter {
       display: none;
     }
   }

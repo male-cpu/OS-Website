@@ -1,6 +1,7 @@
 ---
 import logos from '../images/ospicture2.jpg'
 import logosSmall from '../images/ospicturesmall.jpg'
+import logosUltraSmall from '../images/Old School 500x500 Logo.png'
 
 export interface Props {
   heading?: string;
@@ -10,7 +11,7 @@ export interface Props {
 
 const { heading = "Old School BJJ",
  text = "The School for Grappling & BJJ",
- showExtra = true } = Astro.props as Props
+ showExtra = false } = Astro.props as Props
 ---
 
 <section class="showcase">
@@ -25,6 +26,7 @@ const { heading = "Old School BJJ",
   <div class="showcase-img">
     <img class="logos" src={logos} alt="" />
     <img class="logos-small" src={logosSmall} alt="" />
+    <img class="logosUltraSmall" src={logosUltraSmall} alt="" />
   </div>
 
   <p class="showcase-demo">
@@ -32,7 +34,7 @@ const { heading = "Old School BJJ",
       Contact: 
       <a href="tel:+381692660322">+381692660322</a>
       <br>
-      <a href=mailto:"oldschoolbjjbelgrade@gmail.com">oldschoolbjjbelgrade@gmail.com</a>
+      <a href=mailto:oldschoolbjjbelgrade@gmail.com>oldschoolbjjbelgrade@gmail.com</a>
     </small>
   </p>
   </>}
@@ -42,6 +44,11 @@ const { heading = "Old School BJJ",
 
 .logos-small {
   width: 360px;
+  vertical-align: middle;
+}
+
+.logosUltraSmall {
+  width: 250px;
   vertical-align: middle;
 }
 
@@ -58,22 +65,10 @@ const { heading = "Old School BJJ",
 
 .showcase-text {
   white-space: nowrap;
-  min-width: 360px;
   max-width: 500px;
   color: #fff;
   text-align: center;
   margin: 50px auto;
-}
-
-.showcase h1 {
-  font-size: 50px;
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.showcase p {
-  font-size: 24px;
-  margin-bottom: 20px;
 }
 
 .showcase-img {
@@ -90,4 +85,29 @@ const { heading = "Old School BJJ",
   text-align: center;
   font-weight: 300;
 }
+
+.showcase h1 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.showcase p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 420px) {
+  .showcase h1 {
+    font-size: 37.5px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+
+.showcase p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}
+
 </style>
