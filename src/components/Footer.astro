@@ -3,22 +3,7 @@ import logoFooter from "../images/Old School 500x500 Logo.png"
 ---
 
 <footer class="footer">
-  <div class="container">
-    <div>
       <img class="logoFooter" src={logoFooter} alt="" />
-      <h3></h3>
-      <p>
-      </p>
-    </div>
-    <div>
-      <h3></h3>
-      <ul>
-        <li><a href="https://www.instagram.com/oldschoolbjjbelgrade/">Instagram</a></li>
-        <li><a href="https://www.facebook.com/OSBJJ">Facebook</a></li>
-        <li><a href="https://www.tiktok.com/@oldschoolbjj?is_from_webapp=1&sender_device=pc">TikTok</a></li>
-      </ul>
-    </div>
-  </div>
 </footer>
 
 <style>
@@ -33,34 +18,5 @@ import logoFooter from "../images/Old School 500x500 Logo.png"
   .logoFooter {
   height: 80px;
   vertical-align: middle;
-
-}
-
-  .footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .footer a {
-    color: #a741ff;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-  }
-
-  .footer h3 {
-    margin-bottom: 10px;
-  }
-
-  .footer div:nth-child(1) {
-    text-align: left;
-  }
-
-  @media (max-width: 500px) {
-    .footer div:nth-child(2), .logoFooter {
-      display: none;
-    }
   }
 </style>
