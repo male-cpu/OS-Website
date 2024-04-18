@@ -8,6 +8,6 @@ export default defineConfig({
         // Description of the website
         description: 'The School for Grappling and BJJ',
         // Favicon configuration
-        favicon: 'src/images/Old School 500x500 Logo.png', // or 'path/to/favicon.png'
+        favicon: '/src/images/Old School 500x500 Logo.png', // or 'path/to/favicon.png'
      }
 });
